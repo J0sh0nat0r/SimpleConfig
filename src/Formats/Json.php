@@ -7,7 +7,7 @@ use J0sh0nat0r\SimpleConfig\FormatBase;
 class Json extends FormatBase
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected static $supported_extensions = [
         'js',
@@ -15,7 +15,7 @@ class Json extends FormatBase
     ];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function encode($data)
     {
@@ -23,7 +23,7 @@ class Json extends FormatBase
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function decode($data)
     {

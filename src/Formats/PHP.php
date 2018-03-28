@@ -7,14 +7,14 @@ use J0sh0nat0r\SimpleConfig\FormatBase;
 class PHP extends FormatBase
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected static $supported_extensions = [
         'php',
     ];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function encode($data)
     {
@@ -22,7 +22,7 @@ class PHP extends FormatBase
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function decode($data)
     {

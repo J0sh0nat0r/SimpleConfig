@@ -7,7 +7,7 @@ use J0sh0nat0r\SimpleConfig\FormatBase;
 class Yaml extends FormatBase
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     protected static $supported_extensions = [
         'yml',
@@ -15,7 +15,7 @@ class Yaml extends FormatBase
     ];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function encode($data)
     {
@@ -23,7 +23,7 @@ class Yaml extends FormatBase
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public static function decode($data)
     {
