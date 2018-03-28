@@ -15,8 +15,9 @@ class Config
      * @var IFormat[]
      */
     public static $formats = [
-        Formats\PHP::class,
         Formats\Json::class,
+        Formats\PHP::class,
+        Formats\XML::class,
         Formats\Yaml::class,
     ];
 
