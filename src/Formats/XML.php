@@ -2,7 +2,6 @@
 
 namespace J0sh0nat0r\SimpleConfig\Formats;
 
-
 use J0sh0nat0r\SimpleConfig\FormatBase;
 
 class XML extends FormatBase
