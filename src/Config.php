@@ -203,10 +203,10 @@ class Config
     public function get($key, $default = null)
     {
         if (is_array($key)) {
-            $values = $key;
+            $keys = $key;
             $results = [];
 
-            foreach ($values as $key => $value) {
+            foreach ($keys as $key) {
                 $results[$key] = $this->get($key, $default);
             }
 
