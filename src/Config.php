@@ -220,7 +220,7 @@ class Config
 
         $value = &$this->values;
         foreach ($keys as $key) {
-            if(!isset($value[$key])) {
+            if (!isset($value[$key])) {
                 return $default;
             }
 
