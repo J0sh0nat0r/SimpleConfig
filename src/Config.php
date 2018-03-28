@@ -42,8 +42,8 @@ class Config
     /**
      * Config constructor.
      *
-     * @param string $file Path to the config file
-     * @param array $options Options
+     * @param string $file    Path to the config file
+     * @param array  $options Options
      *
      * @throws InvalidFormatException
      * @throws ConfigNotFoundException
@@ -147,10 +147,12 @@ class Config
     /**
      * Set a value in the config.
      *
-     * @param  string $key Key of the
-     * @param  mixed $value
-     * @return bool|bool[]
+     * @param string $key   Key of the
+     * @param mixed  $value
+     *
      * @throws AutoSaveFailedException
+     *
+     * @return bool|bool[]
      */
     public function set($key, $value = null)
     {
@@ -166,7 +168,7 @@ class Config
         }
 
         if (!is_string($key)) {
-            throw new \InvalidArgumentException("The `key` argument must be an array or a string");
+            throw new \InvalidArgumentException('The `key` argument must be an array or a string');
         }
 
         $keys = preg_split('/(?<!\\\\)(?:\\\\\\\\)*\./', $key);
@@ -192,8 +194,9 @@ class Config
     /**
      * Get a value from the config.
      *
-     * @param  string $key Key of the
-     * @param  mixed $value
+     * @param string $key   Key of the
+     * @param mixed  $value
+     *
      * @return bool|bool[]
      */
     public function get($key, $value = null)
@@ -210,7 +213,7 @@ class Config
         }
 
         if (!is_string($key)) {
-            throw new \InvalidArgumentException("The `key` argument must be an array or a string");
+            throw new \InvalidArgumentException('The `key` argument must be an array or a string');
         }
 
         $keys = preg_split('/(?<!\\\\)(?:\\\\\\\\)*\./', $key);
@@ -240,7 +243,7 @@ class Config
     }
 
     /**
-     * Attempts to find an `IFormat` implementor for the given extension
+     * Attempts to find an `IFormat` implementor for the given extension.
      *
      * @param $extension
      *
@@ -253,7 +256,5 @@ class Config
                 return $format;
             }
         }
-
-        return null;
     }
 }
