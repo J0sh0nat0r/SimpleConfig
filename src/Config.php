@@ -194,19 +194,19 @@ class Config
     /**
      * Get a value from the config.
      *
-     * @param string $key   Key of the
-     * @param mixed  $value
+     * @param string $key     Key of the
+     * @param mixed  $default Default return value
      *
      * @return bool|bool[]
      */
-    public function get($key, $value = null)
+    public function get($key, $default = null)
     {
         if (is_array($key)) {
             $values = $key;
             $results = [];
 
             foreach ($values as $key => $value) {
-                $results[$key] = $this->get($key, $value);
+                $results[$key] = $this->get($key, $default);
             }
 
             return $results;
@@ -220,6 +220,10 @@ class Config
 
         $value = &$this->values;
         foreach ($keys as $key) {
+            if(!isset($value[$key])) {
+                return $default;
+            }
+
             $value = $value[$key];
         }
 
@@ -245,7 +249,7 @@ class Config
     /**
      * Attempts to find an `IFormat` implementor for the given extension.
      *
-     * @param $extension
+     * @param string $extension
      *
      * @return IFormat|null
      */
