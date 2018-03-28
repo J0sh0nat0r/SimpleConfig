@@ -1,0 +1,20 @@
+{
+    "name": "j0sh0nat0r/simple-config",
+    "description": "A simple yet modular PHP configuration library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh",
+            "email": "josh@joshp.xyz"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "J0sh0nat0r\\SimpleConfig\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6"
+    }
+}
