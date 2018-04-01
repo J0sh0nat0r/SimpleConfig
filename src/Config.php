@@ -148,8 +148,8 @@ class Config
     /**
      * Set a value in the config.
      *
-     * @param string $key   Key of the
-     * @param mixed  $value
+     * @param string|array $key   Key of the config value
+     * @param mixed        $value Value
      *
      * @throws AutoSaveFailedException
      *
