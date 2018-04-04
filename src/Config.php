@@ -219,7 +219,7 @@ class Config
 
         $keys = preg_split('/(?<!\\\\)(?:\\\\\\\\)*\./', $key);
 
-        $value = &$this->values;
+        $value = $this->values;
         foreach ($keys as $key) {
             if (!isset($value[$key])) {
                 return $default;
