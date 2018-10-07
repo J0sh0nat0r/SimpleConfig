@@ -1,4 +1,5 @@
 <?php
+
 namespace J0sh0nat0r\SimpleConfig;
 
 /**
@@ -38,7 +39,6 @@ class StaticFacade
 
         throw new \BadMethodCallException();
     }
-
 
     /**
      * Bind the `StaticFacade` to an instance of `Config`.
