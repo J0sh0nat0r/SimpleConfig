@@ -3,6 +3,13 @@
     "description": "A simple yet modular PHP configuration library",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "config",
+        "json",
+        "xml",
+        "yaml",
+        "php"
+    ],
     "authors": [
         {
             "name": "Josh",
